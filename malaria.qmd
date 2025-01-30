@@ -72,7 +72,6 @@ Malaria_cases_deaths = pd.merge(
     how="left",
 )
 
-
 Malaria_data = pd.merge(
     Malaria_cases_deaths,
     Under5_pop_long,
@@ -234,7 +233,6 @@ bar_fig = px.bar(
 `{python} highest_malaria_prev_country`
 
 :::
-
 ::: {.valuebox icon="thermometer" color="#87CEFA" title="Lowest Malaria Prevalence Rate"} 
 
 `{python} str(lowest_malaria_prev_value)`
@@ -242,8 +240,6 @@ bar_fig = px.bar(
 `{python} lowest_malaria_prev_country`
 
 :::
-
-
 ## Row 2 {height=60%}
 
 ### {width=70%}
@@ -302,7 +298,6 @@ itables.show(reg_sum)
 
 ### Column {width="80%"}
 
-
 ```{python}
 Malaria_data_2006_sorted = Malaria_data_2006.sort_values(by="Mortality_rate", ascending=False)
 
@@ -327,7 +322,6 @@ continent_fig.show()
 ### Column {width="20%"}
 
 Malaria mortality rates among children under five highlight stark disparities between continents. Africa reports an alarmingly high rate of 4,513 deaths per 100,000, underscoring significant health challenges faced by this vulnerable population. In contrast, Oceania, Asia, and the Americas show much lower ratesâ€”106, 79, and 36 deaths per 100,000 respectivelyâ€”indicating notable progress in health and environmental conditions in these regions.
-
 
 # RELATIONSHIP
 
@@ -358,8 +352,6 @@ fig = px.scatter(
 fig.show()
 
 ```
-
-
 # DATA DOWNLOAD
 
 ```{python}
